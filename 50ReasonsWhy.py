@@ -3,7 +3,7 @@ import time
 
 # Set page configuration
 st.set_page_config(
-    page_title="💌 50 Reasons Why Yatakshi is the Most Special Person",
+    page_title="💌 50 Reasons Why Yatakshi Most Special and My Favorite Person",
     page_icon="💖",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -105,21 +105,9 @@ reasons = [
 # State Initialization
 # -----------------------------------
 if "index" not in st.session_state:
-    st.session_state.index = 0
-
-# -----------------------------------
-# Title
-# -----------------------------------
-st.markdown('<div class="title">💌 50 Reasons Why Yatakshi is the Most Special Person</div>', unsafe_allow_html=True)
-
-# -----------------------------------
-# Flashcard Display with Animation
-# -----------------------------------
+    st.session_state.index = 
+st.markdown('<div class="title">💌 50 Reasons Why Yatakshi is the Most Special and My Favorite Person <3 </div>', unsafe_allow_html=True)
 st.markdown(f'<div class="card">{reasons[st.session_state.index]}</div>', unsafe_allow_html=True)
-
-# -----------------------------------
-# Navigation Buttons with Unique Keys
-# -----------------------------------
 col1, col2, col3 = st.columns([1, 2, 1])
 with col1:
     if st.button("⬅️ Previous", key="prev_btn", use_container_width=True):
@@ -130,10 +118,6 @@ with col3:
     if st.button("Next ➡️", key="next_btn", use_container_width=True):
         st.session_state.index = (st.session_state.index + 1) % len(reasons)
         time.sleep(0.1)
-
-# -----------------------------------
-# Footer
-# -----------------------------------
 st.markdown(
     "<br><center><sub>Made with 💗 for My Laadli (Beloved) Yatakshi.</sub></center>",
     unsafe_allow_html=True
