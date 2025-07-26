@@ -105,7 +105,7 @@ reasons = [
 # State Initialization
 # -----------------------------------
 if "index" not in st.session_state:
-    st.session_state.index = 
+    st.session_state.index = 0
 st.markdown('<div class="title">💌 50 Reasons Why Yatakshi is the Most Special and My Favorite Person <3 </div>', unsafe_allow_html=True)
 st.markdown(f'<div class="card">{reasons[st.session_state.index]}</div>', unsafe_allow_html=True)
 col1, col2, col3 = st.columns([1, 2, 1])
